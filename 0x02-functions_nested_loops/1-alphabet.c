@@ -2,16 +2,17 @@
 
 /**
  * print_alphabet -> This function prints all letters of the alphbet
- * @c: parameter of type char
+ *
  * Return: Void.
  */
 
 void print_alphabet(void)
-{ char k;
+{
+	char c;
 
-	for (k = 'a'; k <= 'z'; k++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(k);
+		_putchar(c);
 	}
 		_putchar('\n');
 }
