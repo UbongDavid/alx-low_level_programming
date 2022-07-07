@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_alphabet -> This function prints all letters of the alphbet
+ * @c: parameter of type char
+ * Return: Void.
  */
 
 void print_alphabet(void)
