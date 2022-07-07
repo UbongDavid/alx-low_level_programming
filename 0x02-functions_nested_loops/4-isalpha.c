@@ -1,14 +1,14 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - check if the entered character is lowercase alphabet
+ * _isalpha - check if the entered character is an alphabet
  * @c: Integer Variable
  * Return: Always 0.
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (islower(c))
+	if (isalpha(c))
 	{
 		return (1);
 	}
