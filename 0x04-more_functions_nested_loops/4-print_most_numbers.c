@@ -1,19 +1,21 @@
 #include "main.h"
-
 /**
- * print_most_numbers - check if the entered character is lowercase alphabet
- * @c: Integer Variable
- * Return: Always 0.
+ * print_most_numbers - prints 0 - 9, a new line, omit 2 and 4
+ *
+ * Return: Nil
  */
 
-int _islower(int c)
+void print_most_numbers(void)
 {
-	if (islower(c))
+	char c;
+
+	for (c = 0; c <= 9; c++)
 	{
-		return (1);
+		_putchar(c + '0');
+		if (c == 1 || c == 3)
+		{
+			c++;
+		}
 	}
-	else
-	{
-		return (0);
-	}
+	_putchar('\n');
 }

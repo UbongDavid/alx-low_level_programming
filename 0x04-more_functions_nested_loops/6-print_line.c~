@@ -1,0 +1,23 @@
+#include "main.h"
+/**
+ * print_line - prints 0 - 14, 10 times, followed by a new line
+ *
+ * Return: Nil
+ */
+
+void print_line(int n)
+{
+	/* char c; */
+	if (n > 0)
+	{
+		for (m = 1; m <= n; m++)
+		{
+			_putchar('_');
+		}
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
