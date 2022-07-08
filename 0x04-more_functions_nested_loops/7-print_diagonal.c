@@ -1,35 +1,33 @@
 #include "main.h"
+
 /**
- * print_diagonal - this function draws a diagonal line in the terminal
- * @n: Integer value
- * Return: Nil
+ * print_diagonal - prints diagonal line
+ *@n: print int
+ * Return: Always 0.
  */
 
 void print_diagonal(int n)
+
 {
+	int i;
+	int b;
+
 	if (n > 0)
 	{
-		for (m = 1; m <= n; m++)
+		for (i = 0; i < n; i++)
 		{
-		       
-			_putchar('\\');
-			_putchar('\n');
-			void createBlankSpace(void);
-			
-			for (a = 1; a <= n; a++)
+			for (b = 0; b < i; b++)
 			{
-				void createBlankSpace(void);
+				_putchar (' ');
 			}
+			_putchar (92);
+			_putchar ('\n');
 		}
+
 	}
 	else
 	{
-		_putchar('\n');
+		_putchar ('\n');
 	}
-}
 
-void createBlankSpace(void)
-/* createBlankSpace - Create blank spaces */
-{
-	_putchar(' ');
 }
