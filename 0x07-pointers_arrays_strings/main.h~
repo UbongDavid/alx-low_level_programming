@@ -7,6 +7,3 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 int main(void);
-#define FIRST 0
-#define LAST 7
-int _putchar(char c);
