@@ -1,0 +1,25 @@
+#include "main.h"
+
+/**
+ * _puts_recursion - prints a string followed by a newline
+ * @s: a string variable
+ * Return: Void
+ */
+
+int _strlen_recursion(char *s)
+{
+	/*strlen(str)*/
+		const char *s;
+	{
+	        register const char *ss;
+		if (s == *ss)
+		{
+			return(ss - s);
+		}
+		else
+		{
+			(ss = s; *ss; ++ss);
+		
+			++s
+				_strlen_recursion(*s)
+		}
