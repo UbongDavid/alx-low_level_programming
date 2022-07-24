@@ -12,6 +12,6 @@ int main(int argc, char **argv)
 	int argumentIndex;
 
 	for ((argumentIndex = 0); (argumentIndex <= argc - 1); argumentIndex++)
-	{printf("%s\n", argv[argumentIndex]);}
+	{printf("%s\n", argv[argumentIndex]); }
 	return (0);
 }
