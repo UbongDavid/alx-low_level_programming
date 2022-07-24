@@ -9,6 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	if (argv){printf("%i\n", argc - 1);}
+	if (argv)
+		printf("%i\n", argc - 1);
 	return (0);
 }
