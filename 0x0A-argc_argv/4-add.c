@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - A program that prints the sum of two numbers
  * @argc: total number of passed command-line arguments
@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
 	while (argc-- && argc != 0)
 	{
-		if (!atoi(argv[argc]) && !atoi(argv[argc]) == 0)
+		if (!isNumber(*argv))
 		{
 			printf("Error\n");
 			return (1);
@@ -29,5 +29,25 @@ int main(int argc, char **argv)
 		argumentSum += atoi(argv[argc]);
 	}
 	printf("%i\n", argumentSum);
+	return (0);
+}
+
+/**
+ * isNumber - A function that checks if a value is a number
+ * @s: array variable containing the assessed value
+ * Return: 1 if isNumber and 0 otherwise
+ */
+int isNumber(char s[])
+{
+	int i = 0;
+
+	while (s[i])
+	{
+		/*if (isdigit(s[i]) == 0)*/
+			printf("%i\n", s[i]);
+			s++;
+	}
+/*	return (0);*/
+
 	return (0);
 }
