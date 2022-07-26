@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
 	while (argc-- && argc != 0)
 	{
-		if (!atoi(argv[argc]))
+		if (!atoi(argv[argc]) && !atoi(argv[argc]) == 0)
 		{
 			printf("Error\n");
 			return (1);
