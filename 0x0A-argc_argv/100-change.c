@@ -1,20 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * main - A program that prints the sum of two numbers
  * @argc: total number of passed command-line arguments
  * @argv: array containing passed CLI arguments
  * Return: Varies
  */
-
 int main(int argc, char **argv)
 {
-	int numberOfCoins = 0;
+	int numberOfCoins = 0, c, change;
 	int coinArray[5] = {25, 10, 5, 2, 1};
-	int c;
-	int change;
 
 	if ((argc != 2))
 	{
