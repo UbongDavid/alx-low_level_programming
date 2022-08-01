@@ -1,0 +1,26 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+/**
+ * main - A program that prints the sum of two numbers
+ * @argc: total number of passed command-line arguments
+ * @argv: array containing passed CLI arguments
+ * Return: Varies
+ */
+
+char *create_array(unsigned int size, char c);
+{
+	int arrayOfChars[size] = 0;
+
+	if (size == 0) return (NULL);
+
+	if (
+	{
+		return (char);
+	}
+	else
+	{
+		return (NULL);
+	}
+}
