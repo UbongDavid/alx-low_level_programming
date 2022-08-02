@@ -1,5 +1,5 @@
-#ifndef _DOG_H
-#define _DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
  * struct dog- Custom Data Structure for Dog data
@@ -17,4 +17,4 @@ struct dog
 	char *owner;
 }
 
-#endif
+#endif /*#ifndef _DOG_H_*/
