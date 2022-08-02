@@ -1,6 +1,7 @@
 #ifndef _DOG_H_
 #define _DOG_H_
 
+int main(void);
 /**
  * struct dog- Custom Data Structure for Dog data
  * @name: First member
@@ -10,7 +11,7 @@
  * Description: Custom Data Structure created to store Dog data
  */
 
-struct dog
+struct dog dog
 {
 	char *name;
 	float age;
