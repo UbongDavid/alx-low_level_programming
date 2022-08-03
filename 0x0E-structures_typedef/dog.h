@@ -1,10 +1,9 @@
 #ifndef _DOG_H_
 #define _DOG_H_
-
-int main(void);
+#include "main.h"
 
 /**
- * struct dog- Custom Data Structure for Dog data
+ * struct dog - Custom Data Structure for Dog data
  * @name: First member
  * @age: Second member
  * @owner: Third member
