@@ -1,6 +1,5 @@
 #ifndef _DOG_H_
 #define _DOG_H_
-#include "main.h"
 
 /**
  * struct dog - Custom Data Structure for Dog data
@@ -17,5 +16,7 @@ struct dog
 	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /*#ifndef _DOG_H_*/
