@@ -2,6 +2,7 @@
 
 /**
  * init_dog - Custom Data Structure for Dog data
+ * @d: Dog record to be initialized
  * @name: First member
  * @age: Second member
  * @owner: Third member
