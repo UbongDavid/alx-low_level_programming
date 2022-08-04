@@ -12,15 +12,19 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i = 0;
-	
+
 
 	va_start(ap, n);
 
-	while (i < n)
+	while (i <= n)
 	{
-		sum += va_arg(ap, int);
+		if (!(*separator) == NULL)
+		{
+			printf(*separator);
+		}
+		_putchar(' ');
 		i++;
 	}
-	va_end(ap);
-	return (sum);
+	_putchar('\n');
+	return;
 }

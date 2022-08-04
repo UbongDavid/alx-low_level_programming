@@ -8,22 +8,23 @@
  * Return: The Sum of the arguments received
  */
 
-int sum_them_all(const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i = 0;
-	int sum = 0;
 
-	if (n == 0)
-		return (0);
 
 	va_start(ap, n);
 
 	while (i <= n)
 	{
-		sum += va_arg(ap, int);
+		if (!(*separator) == NULL)
+		{
+			printf("%c"*separator);
+		}
+		_putchar(' ');
 		i++;
 	}
-	va_end(ap);
-	return (sum);
+	_putchar('\n');
+	return;
 }
