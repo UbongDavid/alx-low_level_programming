@@ -24,7 +24,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%i", va_arg(ap, int));
 		if (i < (n - 1)) /* i = 0 1 2 3 => 4 iterations */
-		       	printf("%s", separator);
+			printf("%s", separator);
 		i++;
 	}
 	va_end(ap);
