@@ -16,10 +16,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 
-	while (i < n)
+	while (i <= n)
 	{
-		(va_arg(ap, int) == NULL) ? printf("(nil)") : printf("%d", va_arg(ap, int));
-		_putchar(*separator);
+		if (!(*separator) == NULL)
+		{
+			printf(*separator);
+		}
 		_putchar(' ');
 		i++;
 	}
