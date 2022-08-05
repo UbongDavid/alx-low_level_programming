@@ -21,15 +21,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{	/*printf("%i", va_arg(ap, int));*/
 		if (*separator == 0)
 		{
-			return; /*printf("%c", *separator);*/
+			va_end(ap);
+			/*return; printf("%c", *separator);*/
 		}
-		else if (i != n - 1)
-		{
-			printf("%i", va_arg(ap, int));
-			printf(" ");
-			i++;
-		}
-
-}
-	printf("\n");
+		if (i == (n - 1))
+			printf("%i\n", va_arg(ap, int));
+		else
+			printf("%i%c ", va_arg(ap, int), *separator);
+		i++;
+	}
+	/*printf("\n");*/
+	va_end(ap);
 }
