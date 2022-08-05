@@ -13,6 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i = 0;
+	char *lilBuffer = "";
 
 	va_start(ap, n);
 
@@ -22,14 +23,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			va_end(ap);
 		}
-		/*lilBuffer = (va_arg(ap, int) == 0) ? *nil : va_arg(ap, int)*/
+		*lilBuffer = va_arg(ap, int);
+
 		if (i == (n - 1))
-			printf("%s\n", *va_arg(ap, int));
+			printf("%s\n", lilBuffer);
 		else if (*separator == 0)
-			printf("%snill", *va_arg(ap, int));
+			printf("%snill", lilBuffer);
 		else
-			printf("%s%s", *va_arg(ap, int), separator);
+			printf("%s%s", lilBuffer, separator);
 		i++;
 	}
-va_end(ap);
+	va_end(ap);
 }
