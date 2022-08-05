@@ -3,9 +3,10 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - A program that sums variable number of arguments
- * @n: fixed argument to supply the number of variable arguments provided
- * Return: The Sum of the arguments received
+ * print_numbers - Prints the sum of its optional arguments
+ * @separator: Specifies the delimiter
+ * @n: Specifies the number of optional arguments
+ * Return: Nothing
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -19,7 +20,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		printf("%i", va_arg(ap, int));
-		if (*separator && i != (n-1))
+		if (*separator && i != (n - 1))
 		{
 			printf("%c", *separator);
 		}
@@ -27,5 +28,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		i++;
 	}
 	printf("\n");
-	return;
 }
