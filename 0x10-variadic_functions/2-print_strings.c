@@ -19,19 +19,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	while (i < n)
 	{
-		if (*separator == 0)
+		lilBuffer = va_arg(ap, char *);
+		if (separator == NULL)
 		{
-			va_end(ap);
+			separator = "";
 		}
-		*lilBuffer = va_arg(ap, int);
-
-		if (i == (n - 1))
-			printf("%s\n", lilBuffer);
-		else if (*separator == 0)
-			printf("%snill", lilBuffer);
-		else
-			printf("%s%s", lilBuffer, separator);
+		if (lilBuffer == NULL)
+		{
+			lilBuffer = "(nil)";
+		}
+		printf("%s", lilBuffer);
+		if (i < (n - 1))
+			printf("%s", separator);
 		i++;
 	}
 	va_end(ap);
+	printf("\n");
 }
