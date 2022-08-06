@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "function_pointers.h"
+
+/**
+ * main - A program that prints
+ * Return: Always 0
+ */
+
+void print_name(char *name, void (*f)(char *))
+{
+	while (name)
+	{
+		_putchar(*name);
+		name++;
+	}
+	_putchar('\n');
+	return;
+}
