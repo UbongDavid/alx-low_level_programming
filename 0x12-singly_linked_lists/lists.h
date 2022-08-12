@@ -3,7 +3,7 @@
 
 
 #include <stdlib.h>
-
+/*#include "2-add_node.c"*/
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
